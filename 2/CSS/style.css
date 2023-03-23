@@ -1,0 +1,58 @@
+html{
+    font-size: 46%;
+    background-image: url(../asset/alan-jones-OQsxdghBKrU-unsplash.jpg);
+     background-size: cover;
+     text-align: center; 
+     
+}  
+body {
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+footer p{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+
+.aiguille {
+    width: 25%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 25%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.07s; 
+    transition-timing-function: ease-in-out;
+}
+
+
+.horloge{
+ width: 30rem;
+ height: 30rem;
+ border: 20px solid #4b34f6;
+ border-radius: 50%;
+ margin: 50px auto;
+ position: relative;
+ padding: 2rem;
+ box-shadow: 
+ 0 0 0px 4px #041658,
+ inset 0 0 0 3px #041658,
+ inset 0 0 10px #041658,
+ 0 0 10px #fff
+
+}
+
+.cadran{
+    position: relative;
+    width: 60rem;
+    height: 60rem;
+    transform: translateY(px);
+}

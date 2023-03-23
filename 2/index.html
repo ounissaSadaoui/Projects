@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="petite horloge en css, js">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon/images.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Petite Horloge</title>
+</head>
+<body>
+
+    <div class="horloge">
+     <div class="cadran">
+        <div class="aiguille heures"></div>
+        <div class="aiguille minutes"></div>
+        <div class="aiguille secondes"></div>
+     </div>
+    </div>
+
+    <footer><p>&copy;Ounissa -2023</p></footer>
+   
+</body>
+<script>
+
+    const ss = document.querySelector(".secondes");
+    const ms = document.querySelector(".minutes");
+    const hs = document.querySelector(".heures");
+
+    function setDate (){
+        const now = new Date();
+
+        const sec =now.getSeconds();
+        const secondesdegres = ((sec / 60) * 360) + 90;
+        ss.style.transform = `rotate(${secondesdegres}deg)`; 
+        
+
+        const min = now.getMinutes();
+        const minutesdegres = ((min / 60) * 360)+ 90;
+        ms.style.transform = `rotate(${minutesdegres}deg)`;
+
+        const heur = now.getHours();
+        const heuredegres = ((heur / 12) * 360)+ 90;
+        hs.style.transform = `rotate(${heuredegres}deg)`;
+    
+
+    }
+    setInterval(setDate, 1000);
+
+</script>
+</html>
