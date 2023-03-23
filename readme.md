@@ -4,7 +4,7 @@
 je n'ai pas pu trouver les vrais sons des "keys" d'une batterie, du coup j'ai pris plusieurs autres sons 
 
 # première étape, le html/CSS 
-il faut encore que j'arrange un peu mon display en css, 'est pas super parfait
+il faut encore que j'arrange un peu mon display en css, c'est pas super parfait
 
 je peux aussi ajouter d'autres sons, parce que j'ai mis top peu, et ça serait plus drôle avec plus que ça.
 
@@ -16,4 +16,4 @@ j'ai appris à écrire des petites fonctions sur des eventlisteners, et à ajout
 key.classList.add("playing");
 ```
 **aussi**,
-donc date: 17 mars 2023
+date: 17 mars 2023
